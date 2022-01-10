@@ -35,7 +35,7 @@ public class GuestbookController extends HttpServlet {
 			System.out.println(vo.toString());
 
 			//리다이렉트
-			response.sendRedirect("/guestbook2/gbc");
+			WebUtil.redirect(request, response, "/guestbook2/gbc");
 			
 		} else if ("deleteform".equals(action)) {
 
